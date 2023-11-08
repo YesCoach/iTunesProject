@@ -14,6 +14,11 @@ final class SearchViewController: BaseViewController {
         return searchController
     }()
 
+    override func configureNavigationBar() {
+        super.configureNavigationBar()
+        navigationItem.searchController = searchController
+    }
+
     override func configureUI() {
         super.configureUI()
         view.backgroundColor = .systemMint

@@ -20,6 +20,7 @@
 		89485CB32AFB64D300570905 /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = 89485CB22AFB64D300570905 /* RxDataSources */; };
 		89485CB62AFB64E400570905 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 89485CB52AFB64E400570905 /* Kingfisher */; };
 		89485CB92AFB678900570905 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89485CB82AFB678900570905 /* BaseViewController.swift */; };
+		89485CC22AFB6A1A00570905 /* SearchAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89485CC12AFB6A1A00570905 /* SearchAppModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		89485C9C2AFB5A9400570905 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89485C9E2AFB5A9400570905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89485CB82AFB678900570905 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		89485CC12AFB6A1A00570905 /* SearchAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAppModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +75,9 @@
 				89485C902AFB5A9200570905 /* AppDelegate.swift */,
 				89485C922AFB5A9200570905 /* SceneDelegate.swift */,
 				89485C942AFB5A9200570905 /* SearchViewController.swift */,
+				89485CBF2AFB69FB00570905 /* Domain */,
 				89485CB72AFB677800570905 /* Base */,
+				89485CBA2AFB69A200570905 /* Data */,
 				89485C992AFB5A9400570905 /* Assets.xcassets */,
 				89485C9B2AFB5A9400570905 /* LaunchScreen.storyboard */,
 				89485C9E2AFB5A9400570905 /* Info.plist */,
@@ -87,6 +91,37 @@
 				89485CB82AFB678900570905 /* BaseViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		89485CBA2AFB69A200570905 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				89485CBB2AFB69B500570905 /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		89485CBB2AFB69B500570905 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		89485CBF2AFB69FB00570905 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				89485CC02AFB6A0300570905 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		89485CC02AFB6A0300570905 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				89485CC12AFB6A1A00570905 /* SearchAppModel.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +213,7 @@
 				89485C952AFB5A9200570905 /* SearchViewController.swift in Sources */,
 				89485CB92AFB678900570905 /* BaseViewController.swift in Sources */,
 				89485C912AFB5A9200570905 /* AppDelegate.swift in Sources */,
+				89485CC22AFB6A1A00570905 /* SearchAppModel.swift in Sources */,
 				89485C932AFB5A9200570905 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
